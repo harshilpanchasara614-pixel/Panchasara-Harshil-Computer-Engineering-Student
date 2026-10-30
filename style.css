@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  }
+
+body {
+font-family: Arial, sans-serif;
+background: #0b0b16;
+color: white;
+}
+
+/* Header */
+
+header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px 8%;
+background: #151526;
+position: sticky;
+top: 0;
+z-index: 100;
+}
+
+header h2 {
+color: #00d9ff;
+font-size: 28px;
+}
+
+nav a {
+color: white;
+text-decoration: none;
+margin-left: 20px;
+transition: 0.3s;
+}
+
+nav a:hover {
+color: #00d9ff;
+}
+
+/* Sections */
+
+section {
+padding: 100px 10%;
+text-align: center;
+}
+
+/* Home */
+
+#home {
+min-height: 90vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.profile-img {
+width: 170px;
+height: 170px;
+border-radius: 50%;
+object-fit: cover;
+border: 4px solid #00d9ff;
+margin-bottom: 30px;
+box-shadow: 0 0 25px #00d9ff;
+display: block;
+}
+
+#home h1 {
+font-size: 42px;
+margin-bottom: 15px;
+}
+
+#home span {
+color: #00d9ff;
+}
+
+#home h3 {
+margin: 15px;
+color: #ddd;
+}
+
+#home p {
+color: #aaa;
+}
+
+/* Button */
+
+.btn {
+margin-top: 25px;
+padding: 13px 30px;
+background: #00d9ff;
+color: black;
+text-decoration: none;
+border-radius: 30px;
+font-weight: bold;
+transition: 0.3s;
+}
+
+.btn:hover {
+background: white;
+box-shadow: 0 0 20px #00d9ff;
+}
+
+/* About */
+
+section h1 {
+color: #00d9ff;
+margin-bottom: 25px;
+}
+
+#about p {
+max-width: 650px;
+margin: auto;
+line-height: 1.9;
+color: #ccc;
+font-size: 17px;
+}
+
+/* Hobbies */
+
+.cards {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+gap: 20px;
+}
+
+.card {
+background: #19192c;
+padding: 30px;
+border-radius: 15px;
+min-width: 180px;
+transition: 0.3s;
+border: 1px solid #292945;
+font-size: 17px;
+}
+
+.card:hover {
+transform: translateY(-10px);
+background: #252545;
+border-color: #00d9ff;
+}
+
+/* Contact */
+
+#contact p {
+margin: 15px;
+color: #ccc;
+}
+
+/* Footer */
+
+footer {
+text-align: center;
+padding: 25px;
+background: #151526;
+color: #aaa;
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 600px) {
+
+header {
+    flex-direction: column;
+    gap: 18px;
+}
+
+nav a {
+    margin: 5px;
+    font-size: 13px;
+}
+
+#home h1 {
+    font-size: 28px;
+}
+
+#home h3 {
+    font-size: 16px;
+}
+
+.profile-img {
+    width: 140px;
+    height: 140px;
+}
+
+section {
+    padding: 75px 6%;
+}
+
+.card {
+    width: 100%;
+}
+
+}
